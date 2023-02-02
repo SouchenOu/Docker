@@ -8,6 +8,10 @@ what is virtualization ?
 
 what is hypervisor ?
 
+Difference between containerization vs virtualization ?
+
+who is Docker for ?
+
 
 
 
