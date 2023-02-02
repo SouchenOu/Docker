@@ -43,6 +43,19 @@ What is container :
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
 
 
+What is virtualisation :
+------------------------
+
+OS virtualization is the use of software to allow a piece of hardware to run multiple operating system images at the same time.
+
+(Having more than one operating system in one server..)
+
+
+How does virtualisation work ?
+------------------------------
+
+Hypervisors take your physical resources (Processor, Ram, Hard disk) and divide them up so that virtual environement can use them .
+
 
 Some ressources:
 ------------------
