@@ -109,6 +109,10 @@ When you use commande such as docker run, the client send this command to docker
 
 <img width="891" alt="Screen Shot 2023-02-02 at 1 24 10 PM" src="https://user-images.githubusercontent.com/87101785/216330743-7b321b97-da15-4c04-b97d-5279df946e1e.png">
 
+What is namespaces:
+-------------------
+
+Docker uses a technology called namespaces to provide the isolated workspace called the container.When you run a container docker creates a set of namespaces for that container.This namespace provide a layer of isolation.Each aspect of a container runs in a seperate namespace and its access is limited to that namespace.
 
 
 Some ressources:
