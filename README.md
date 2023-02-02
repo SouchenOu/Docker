@@ -88,7 +88,7 @@ virtualisation vs containerization :
 What is a docker image ?
 -----------------------
 
-
+An image is a read only template with instructions for creating a docker container. you may build, an image which is based on the ubuntu image and sqlServer.
 
 
 Some ressources:
