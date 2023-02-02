@@ -27,9 +27,20 @@ Docker is an open source platform that enables developers to build, deploy, run,
 
 An application running in a container is isolated from the rest of the system and from other containers
 
----> every application that will run in every container it will be isolate from others (other containers) it will be like that application run in other operationg system  (but this is wrong  because we have one operating system at that time)
+---> every application that will run in every container it will be isolate from others (other containers) it will be like that every application run in different operationg system  (but this is wrong  because we have one operating system at that time)
 
---> we can run a lot of containers in just one operator system by using docker
+--> we can run a lot of containers in just one operator system by using docker.
+
+(Multiple docker containers can be run on the single operating system simultaneously you can manage those containers with docker )
+
+--> Docker is a container management service.
+
+
+What is container :
+-------------------
+
+
+A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
 
 
 
