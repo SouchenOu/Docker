@@ -64,6 +64,9 @@ virtualisation vs containerization :
 <img width="891" alt="Screen Shot 2023-02-02 at 1 14 42 PM" src="https://user-images.githubusercontent.com/87101785/216323145-623a6ea9-f8d1-4b21-91a9-8d2078c6a009.png">
 
 
+<img width="891" alt="Screen Shot 2023-02-02 at 1 24 10 PM" src="https://user-images.githubusercontent.com/87101785/216324331-a67c91c0-a061-4064-9ebb-352a00cdd8f2.png">
+
+
 
 
 Some ressources:
