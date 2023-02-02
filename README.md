@@ -57,6 +57,15 @@ How does virtualisation work ?
 Hypervisors take your physical resources (Processor, Ram, Hard disk) and divide them up so that virtual environement can use them .
 
 
+virtualisation vs containerization :
+-----------------------------------
+
+
+<img width="891" alt="Screen Shot 2023-02-02 at 1 14 42 PM" src="https://user-images.githubusercontent.com/87101785/216323145-623a6ea9-f8d1-4b21-91a9-8d2078c6a009.png">
+
+
+
+
 Some ressources:
 ------------------
 
