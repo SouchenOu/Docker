@@ -1,5 +1,9 @@
 # Docker
 
+I will talk about ---->
+------------------
+
+
 what is docker ?
 
 what is container ?
@@ -8,9 +12,24 @@ what is virtualization ?
 
 what is hypervisor ?
 
+
 Difference between containerization vs virtualization ?
 
 who is Docker for ?
+
+What is docker image ?
+
+What is a docker container ?
+
+What is docker registry ?
+
+What is docker client ?
+
+What is a docker deomen ?
+
+What is a docker namespace ?
+
+
 
 
 
@@ -65,6 +84,9 @@ virtualisation vs containerization :
 
 
 <img width="891" alt="Screen Shot 2023-02-02 at 1 24 10 PM" src="https://user-images.githubusercontent.com/87101785/216324331-a67c91c0-a061-4064-9ebb-352a00cdd8f2.png">
+
+What is a docker image ?
+-----------------------
 
 
 
