@@ -21,8 +21,15 @@ What is Docker :
 Docker is an open source platform that enables developers to build, deploy, run, update and manage containers—standardized, executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.
 
 
+<img width="668" alt="Screen Shot 2023-02-02 at 11 00 25 AM" src="https://user-images.githubusercontent.com/87101785/216293831-46b228de-6f4c-4bfa-a7ba-f2b855ab0b6e.png">
 
 
+
+An application running in a container is isolated from the rest of the system and from other containers
+
+---> every application that will run in every container it will be isolate from others (other containers) it will like that application run in other operationg system  (but this is wrong  because we have one operating system at that time)
+
+--> we can run a lot of containers in just one operator system by using dockey
 
 
 
