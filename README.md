@@ -90,6 +90,26 @@ What is a docker image ?
 
 An image is a read only template with instructions for creating a docker container. you may build, an image which is based on the ubuntu image and sqlServer.
 
+Container :
+-----------
+
+container is an image that is running (When i install an application in docker it will be a container )
+
+What is registry :
+-----------------
+
+A docker registry stores docker images. docker hub is a public registry that anyone can use 
+
+What is client :
+--------------
+
+When you use commande such as docker run, the client send this command to docker 
+
+
+
+<img width="891" alt="Screen Shot 2023-02-02 at 1 24 10 PM" src="https://user-images.githubusercontent.com/87101785/216330743-7b321b97-da15-4c04-b97d-5279df946e1e.png">
+
+
 
 Some ressources:
 ------------------
