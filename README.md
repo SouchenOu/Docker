@@ -55,6 +55,8 @@ we can easly package up our application with everthing it needs and run it anywh
 and this is the beauty of docker this isolated environment allows multiple applications use different version of some software side by side
 so one application may use node version 14 and another application may use node version 9, both these application can run side by side on the same machine without messing each other so this how docker allows us to consistently run an application on different machines.
 
+There is one more benefit --> When we are done with this application and dont want to work on it anymore, we can remove this application and all its dependencies in one go, withut docker as we work on different projects our development machine gets cluttered with so many libraries and tools that are used by different applications and then after a while we dont know if we can remove one or more of this tools because we are always afraid that we are would mess up with some appication so with docker we dont have to worry about this because each application runs with its dependencies inside an isolated enviroment so we can safely remove an application with all its dependencies to clean up our machine is not that great!!
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
