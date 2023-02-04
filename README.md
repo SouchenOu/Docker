@@ -92,6 +92,18 @@ What is container :
 
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
 
+(container is an isolated environment for running an application).
+
+one of the questions that often comes up is how are containers different from virtual machines or VM ?
+
+so the difference is : -->
+
+virtual machine is an abstraction of machine(physical machine), for example we can have a Mac and on this Mac we can run two virtual machines
+one running window and the other running linux by using a tool called hypervisor.
+with virtual machine we can run applications in isolation so inside a physical machine we can have two virtual machine each running a completely different application and each applicaton has exact dependencies it needs, so application one may use node version 14 and MongoDb version 4 while application two may use node version 9 and MongoDb version 3 all this are running on the same machine but in different isolated environments that is one of the benifits of virtual machines but there are a number of problems :--> virtual machines are slow to start.
+
+containers also give us the same kind of isolation so we can run multiple applications in isolation but thy are more lightweight they dont need a full operating system in fact all containers on a single machine share the operating system of the host that means we need to license patch and monitor a single operating system, also because the operating system has already started on the host a container can start up pretty quickly and also this container dont need a slice of the hardware resources on the host so we dont need to give the a specific number of cpu cores or a slice of memory or disk space so on a single host wwe can run tens or even hundreds of containers side by side .
+
 
 What is virtualisation :
 ------------------------
