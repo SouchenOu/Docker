@@ -119,3 +119,19 @@ Some ressources:
 ------------------
 
 https://www.youtube.com/watch?v=DFyPl2cZM2g&list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ&index=2
+
+Doker vs virtual machine:
+
+https://www.youtube.com/watch?v=5GanJdbHlAA
+
+Create docker-compose and run multiple containers
+ 
+https://www.youtube.com/watch?v=MYV-7ao493k
+
+The Layman's Guide to Linux: Daemons & Init Systems
+
+https://www.youtube.com/watch?v=ydg9KZCCPE0
+
+
+
+
