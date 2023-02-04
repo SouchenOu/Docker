@@ -132,6 +132,8 @@ The Layman's Guide to Linux: Daemons & Init Systems
 
 https://www.youtube.com/watch?v=ydg9KZCCPE0
 
+Full-course Docker:
 
+https://www.youtube.com/watch?v=pTFZFxd4hOI
 
 
