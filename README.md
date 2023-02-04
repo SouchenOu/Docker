@@ -31,7 +31,7 @@ What is a docker namespace ?
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-If we have been developping software for a While you have probably come across this situation where your application works on your development machine but doesnt somewhere else !! -->
+If we have been developping software for a While you have probably come across this situation ->where your application works on your development machine but doesnt somewhere else !! -->
 
 Can you think of three reasons why this happens ??
 
@@ -50,7 +50,7 @@ so Docker comes to the rescue -->
 
 we can easly package up our application with everthing it needs and run it anywhere on any machine with docker, so if your application needs a given version of node and mongoDb all of these will be included in your applications package, now we can take this package and run it in any machine that runs Docker so if it works on your development machine is's definitely going to work on your test and production machines.
 
--->If someone joins your team they dont have to spend half a day or setting up a new machine to run your application they dont have to install and configure all these dependencies they simpley tell docker to bring up your application and docker it self will automatically downloand and run these dependencies inside an isolated environement called a container.
+-->If someone joins your team they dont have to spend half a day or setting up a new machine to run your application they dont have to install and configure all these dependencies, they simpley tell docker to bring up your application and docker it self will automatically downloand and run these dependencies inside an isolated environement called a container.
 
 and this is the beauty of docker this isolated environment allows multiple applications use different version of some software side by side
 so one application may use node version 14 and another application may use node version 9, both these application can run side by side on the same machine without messing each other so this how docker allows us to consistently run an application on different machines.
