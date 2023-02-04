@@ -41,21 +41,23 @@ The reasons is :
 
 1: one or more files missing.
 
-2: if the target machine running a different version of software that your application needs lets say your application needs node version 14
+2: if the target machine running a different version of software that your application needs, lets say your application needs node version 14
 but the target machine is running node version 9.
 
 3: and this can happen if the configuration settings like environment variables are different across these machines.
 
-so Docker comes to the rescue -->
+So Docker comes to the rescue -->
 
-we can easly package up our application with everthing it needs and run it anywhere on any machine with docker, so if your application needs a given version of node and mongoDb all of these will be included in your applications package, now we can take this package and run it in any machine that runs Docker so if it works on your development machine is's definitely going to work on your test and production machines.
+We can easly package up our application with everthing it needs and run it anywhere on any machine with docker, so if your application needs a given version of node and MongoDb all of these will be included in your applications package, now we can take this package and run it in any machine that runs Docker so if it works on your development machine is's definitely going to work on your test and production machines.
 
 -->If someone joins your team they dont have to spend half a day or setting up a new machine to run your application they dont have to install and configure all these dependencies, they simpley tell docker to bring up your application and docker it self will automatically downloand and run these dependencies inside an isolated environement called a container.
 
 and this is the beauty of docker this isolated environment allows multiple applications use different version of some software side by side
 so one application may use node version 14 and another application may use node version 9, both these application can run side by side on the same machine without messing each other so this how docker allows us to consistently run an application on different machines.
 
-There is one more benefit --> When we are done with this application and dont want to work on it anymore, we can remove this application and all its dependencies in one go, withut docker as we work on different projects our development machine gets cluttered with so many libraries and tools that are used by different applications and then after a while we dont know if we can remove one or more of this tools because we are always afraid that we are would mess up with some appication so with docker we dont have to worry about this because each application runs with its dependencies inside an isolated enviroment so we can safely remove an application with all its dependencies to clean up our machine is not that great!!
+There is one more benefit --> When we are done with this application and dont want to work on it anymore, we can remove this application and all its dependencies in one go, without docker as we work on different projects our development machine gets cluttered with so many libraries and tools that are used by different applications and then after a while we dont know if we can remove one or more of this tools because we are always afraid that we are would miss up with some appication so with docker we dont have to worry about this because each application runs with its dependencies inside an isolated enviroment so we can safely remove an application with all its dependencies to clean up our machine.
+
+is not that great!!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
