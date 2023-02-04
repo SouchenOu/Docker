@@ -30,6 +30,18 @@ What is a docker deomen ?
 What is a docker namespace ?
 
 
+If we have been developping software for a While you have probably come across this situation where your application works on your development machine but doesnt somewhere else !! -->
+
+Can you think of three reasons why this happens ??
+
+The reasons is :
+
+1: one or more files missing
+2: if the target machine running a different version of software that your application needs lets say your application needs node version 14
+but the target machine is running node version 9
+3: and this can happen if the configuration settings like environment variables are different across these machines
+
+
 
 
 
@@ -38,6 +50,9 @@ What is Docker :
 --------------
 
 Docker is an open source platform that enables developers to build, deploy, run, update and manage containers—standardized, executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.
+
+
+(Docker is a platform for building , running and shipping applications)
 
 
 <img width="668" alt="Screen Shot 2023-02-02 at 11 00 25 AM" src="https://user-images.githubusercontent.com/87101785/216293831-46b228de-6f4c-4bfa-a7ba-f2b855ab0b6e.png">
