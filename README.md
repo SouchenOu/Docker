@@ -29,21 +29,26 @@ What is a docker deomen ?
 
 What is a docker namespace ?
 
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 If we have been developping software for a While you have probably come across this situation where your application works on your development machine but doesnt somewhere else !! -->
 
 Can you think of three reasons why this happens ??
 
+
 The reasons is :
+---------------
 
-1: one or more files missing
+1: one or more files missing.
+
 2: if the target machine running a different version of software that your application needs lets say your application needs node version 14
-but the target machine is running node version 9
-3: and this can happen if the configuration settings like environment variables are different across these machines
+but the target machine is running node version 9.
+
+3: and this can happen if the configuration settings like environment variables are different across these machines.
 
 
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 What is Docker :
