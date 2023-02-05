@@ -48,16 +48,18 @@ but the target machine is running node version 9.
 
 So Docker comes to the rescue -->
 
-We can easly package up our application with everthing it needs and run it anywhere on any machine with docker, so if your application needs a given version of node and MongoDb all of these will be included in your applications package, now we can take this package and run it in any machine that runs Docker so if it works on your development machine is's definitely going to work on your test and production machines.
+We can easly package up our application with everything it needs and run it anywhere on any machine with docker, so if your application needs a given version of node and MongoDb all of these will be included in your applications package, now we can take this package and run it in any machine that runs Docker so if it works on your development machine is's definitely going to work on your test and production machines.
 
 -->If someone joins your team they dont have to spend half a day or setting up a new machine to run your application they dont have to install and configure all these dependencies, they simpley tell docker to bring up your application and docker it self will automatically downloand and run these dependencies inside an isolated environement called a container.
 
-and this is the beauty of docker this isolated environment allows multiple applications use different version of some software side by side
+and this is the beauty of Docker this isolated environment allows multiple applications use different version of some software side by side,
 so one application may use node version 14 and another application may use node version 9, both these application can run side by side on the same machine without messing each other so this how docker allows us to consistently run an application on different machines.
 
-There is one more benefit --> When we are done with this application and dont want to work on it anymore, we can remove this application and all its dependencies in one go, without docker as we work on different projects our development machine gets cluttered with so many libraries and tools that are used by different applications and then after a while we dont know if we can remove one or more of this tools because we are always afraid that we are would miss up with some appication so with docker we dont have to worry about this because each application runs with its dependencies inside an isolated enviroment so we can safely remove an application with all its dependencies to clean up our machine.
+There is one more benefit --> When we are done with this application and dont want to work on it anymore, we can remove this application and all its dependencies in one go, without Docker as we work on different projects our development machine gets cluttered with so many libraries and tools that are used by different applications and then after a while we dont know if we can remove one or more of this tools because we are always afraid that we are would miss up with some appication so with docker we dont have to worry about this because each application runs with its dependencies inside an isolated enviroment so we can safely remove an application with all its dependencies to clean up our machine.
 
 is not that great!!
+
+yes 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -79,7 +81,7 @@ An application running in a container is isolated from the rest of the system an
 
 ---> every application that will run in every container it will be isolate from others (other containers) it will be like that every application run in different operationg system  (but this is wrong  because we have one operating system at that time)
 
---> we can run a lot of containers in just one operator system by using docker.
+--> we can run a lot of containers in just one operator system by using Docker.
 
 (Multiple docker containers can be run on the single operating system simultaneously you can manage those containers with docker )
 
@@ -96,13 +98,16 @@ A container is a standard unit of software that packages up code and all its dep
 
 one of the questions that often comes up is how are containers different from virtual machines or VM ?
 
-so the difference is : -->
+What is the differences between containers and virtual machines ? 
 
-virtual machine is an abstraction of machine(physical machine), for example we can have a Mac and on this Mac we can run two virtual machines
+so the differences is : -->
+
+Virtual machine is an abstraction of machine (physical machine), for example we can have a Mac and on this Mac we can run two virtual machines
 one running window and the other running linux by using a tool called hypervisor.
-with virtual machine we can run applications in isolation so inside a physical machine we can have two virtual machine each running a completely different application and each applicaton has exact dependencies it needs, so application one may use node version 14 and MongoDb version 4 while application two may use node version 9 and MongoDb version 3 all this are running on the same machine but in different isolated environments that is one of the benifits of virtual machines but there are a number of problems :--> virtual machines are slow to start.
 
-containers also give us the same kind of isolation so we can run multiple applications in isolation but thy are more lightweight they dont need a full operating system in fact all containers on a single machine share the operating system of the host that means we need to license patch and monitor a single operating system, also because the operating system has already started on the host a container can start up pretty quickly and also this container dont need a slice of the hardware resources on the host so we dont need to give the a specific number of cpu cores or a slice of memory or disk space so on a single host wwe can run tens or even hundreds of containers side by side .
+with virtual machine we can run applications in isolation so inside a physical machine we can have two virtual machine each running a completely different application and each applicaton has exact dependencies it needs, so application one may use node version 14 and MongoDb version4 while application two may use node version 9 and MongoDb version 3 all this are running on the same machine but in different isolated environments that is one of the benifits of virtual machines but there are a numbers of problems :--> virtual machines are slow to start....
+
+containers also give us the same kind of isolation so we can run multiple applications in isolation but they are more lightweight they dont need a full operating system in fact all containers on a single machine share the operating system of the host that means we need to license patch and monitor a single operating system, also because the operating system has already started on the host a container can start up pretty quickly and also this container dont need a slice of the hardware resources on the host so we dont need to give  a specific number of CPU cores or a slice of memory or disk space so on a single host we can run tens or even hundreds of containers side by side .
 
 
 What is virtualisation :
@@ -168,10 +173,11 @@ Docker uses a client server architecture so it has client component that talks t
 
 so now as i told you unlike virtual machines containers dont contain a full-blown operating system instead all containers on a host share the operating system of the host, now more accurately all this containers share the kernel of the host (a kernel is the core of an operating system it is like an engine of a care, it is the part that manages all applications as well as hardware resources like memory and CPU).
 
-every operating system has its own kernel and this kernel has different API that is why we can not run a windows application on linux because under the hood this application needs to talk to the kernel of the underlying operating system (that means on a linux machine we can only run linux containers because this containers need linux, on a windows machine however we can run both windows and linux containers because windows 10 is  now shipped with acustom built linux kernel this is in addition to the windows kernel than is always been in windows it is not a replacement so so with this linux kernel now we can run linux applications natively on windows so on windows we can run both linux and windows containers. Our windows containers share the windows kernel and our linux containers share the linux kernel. ) 
+every operating system has its own kernel and this kernel has different API that is why we can not run a windows application on linux because under the hood this application needs to talk to the kernel of the underlying operating system (that means on a linux machine we can only run linux containers because this containers need linux, on a windows machine however we can run both windows and linux containers because windows 10 is  now shipped with a custom built linux kernel this is in addition to the windows kernel than is always been in windows it is not a replacement soo with this linux kernel now we can run linux applications natively on windows so on windows we can run both linux and windows containers. Our windows containers share the windows kernel and our linux containers share the linux kernel. ) 
+
 What about mac os ?
 
-Mac os has its own kernel wich is different from linux and windows kernels and this kernel does not have native support for continers applications so Docker on map uses a lightweight linux virtual machine to run linux containers
+Mac os has its own kernel which is different from linux and windows kernels and this kernel does not have native support for containers applications so Docker on map uses a lightweight linux virtual machine to run linux containers.
 
 
 
