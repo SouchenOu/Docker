@@ -158,6 +158,23 @@ What is namespaces:
 Docker uses a technology called namespaces to provide the isolated workspace called the container.When you run a container docker creates a set of namespaces for that container.This namespace provide a layer of isolation.Each aspect of a container runs in a seperate namespace and its access is limited to that namespace.
 
 
+
+Docker architecture:
+-------------------
+
+-->Lets talk about the architecture of Docker to understand how it works !
+
+Docker uses a client server architecture so it has client component that talks to a server component using a restful API(API – or application programming interface – is a connection between computers or computer programmes and its superpower lies in its ability to allow two different applications to talk to each other.), the server also called the docker engine sits on the background and takes care of building and running docker containers, but technically a container is just a process like other processes running on your computer but it is special kind of process which we are going to talk about soon .
+
+so now as i told you unlike virtual machines containers dont contain a full-blown operating system instead all containers on a host share the operating system of the host, now more accurately all this containers share the kernel of the host (a kernel is the core of an operating system it is like an engine of a care, it is the part that manages all applications as well as hardware resources like memory and CPU).
+
+every operating system has its own kernel and this kernel has different API that is why we can not run a windows application on linux because under the hood this application needs to talk to the kernel of the underlying operating system (that means on a linux machine we can only run linux containers because this containers need linux, on a windows machine however we can run both windows and linux containers because windows 10 is  now shipped with acustom built linux kernel this is in addition to the windows kernel than is always been in windows it is not a replacement so so with this linux kernel now we can run linux applications natively on windows so on windows we can run both linux and windows containers. Our windows containers share the windows kernel and our linux containers share the linux kernel. ) 
+What about mac os ?
+
+Mac os has its own kernel wich is different from linux and windows kernels and this kernel does not have native support for continers applications so Docker on map uses a lightweight linux virtual machine to run linux containers
+
+
+
 Some ressources:
 ------------------
 
