@@ -181,6 +181,24 @@ Mac os has its own kernel which is different from linux and windows kernels and 
 
 
 
+
+
+After installing Docker 
+
+Lets talk about your development workflow when using Docker -->
+
+so to start off we take an application it doesnt matter what kind of application it is or how it is built, we take that application and dockerize it which means we make a small change so that it can be run by Docker , How ??!
+
+we just add a dockerFile to it .
+
+A DockerFile is a a plain text file that includes instructions that docker uses to package up this application into an image, this image contain everything our application needs to run (typically a cut down operating system a runtime environment like node or python, it is also contain application files, environment variables ). So we create a Docker file and give it Docker for packagig our application into an image.
+
+Once we have an image we tell docker to start a container using that image so a container as i told you is just a process but it is a speacial kind of process because it has own file system which is provided by the image so our application gets loaded inside a container and this is how we run our application locally on our machine .
+
+
+
+
+
 Some ressources:
 ------------------
 
