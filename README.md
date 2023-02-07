@@ -196,7 +196,21 @@ A DockerFile is a a plain text file that includes instructions that docker uses 
 Once we have an image we tell docker to start a container using that image so a container as i told you is just a process but it is a speacial kind of process because it has own file system which is provided by the image so our application gets loaded inside a container and this is how we run our application locally on our machine .
 
 
+How to write a Docker file :
+---------------------------
 
+we write instructions for packaging our application 
+
+---> we start from a baseImage this baseImage has a bunch of files we are going t take this files and add additional files to it (for example node image) --> how do i know these names ?  ---> This images are officially published on docker hub
+
+
+
+
+
+---------
+From node
+
+-----------
 
 
 Some ressources:
