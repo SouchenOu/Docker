@@ -352,3 +352,8 @@ Full-course Docker:
 https://www.youtube.com/watch?v=pTFZFxd4hOI
 
 
+Full-course docker compose
+
+
+https://www.youtube.com/watch?v=HG6yIjZapSA
+
