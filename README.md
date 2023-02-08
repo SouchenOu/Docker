@@ -201,16 +201,133 @@ How to write a Docker file :
 
 we write instructions for packaging our application 
 
----> we start from a baseImage this baseImage has a bunch of files we are going t take this files and add additional files to it (for example node image) --> how do i know these names ?  ---> This images are officially published on docker hub
+---> we start from a baseImage this baseImage has a bunch of files we are going to take this files and add additional files to it (for example node image) --> how do i know these names ?  ---> This images are officially published on docker hub
+
+
+<img width="1227" alt="Screen Shot 2023-02-08 at 10 51 29 AM" src="https://user-images.githubusercontent.com/87101785/217495487-c6d0b03b-5367-4f73-89a3-e592c7179991.png">
+
+if you go to hub.docker.com you can see the official node image do docker hub is a registry for docker images
+
+if you see at docker hub you will see that there are multiple node images, these node images are built on top of different distributions of linux, so linux has different distributions or different flavors used for different purposes-->  now here we can specify a tag using ":" to specify which linux distribution we want to use  here i will use alpine which is a very small linux distribution, so the size of the image that we are going to downdoad and build on top of is going to be very small 
 
 
 
+--------Dockerfile---------------------------------------------
+
+FROM node:alpine
+
+---------------------------------------------------------------
 
 
----------
-From node
 
------------
+--> then we need to copy our application or program files, for that we usethe copy instruction or copy command we are going to copy all the files in the current directory  by writing (copy .) into the app directory that is (/app) into that image so that image has a file system and in that file system we are going to create directory called app
+
+
+-------Dockerfile-------------------------------------------
+
+FROM node:alpine
+
+COPY . /app
+
+------------------------------------------------------------
+
+--> finally we are going to use the command instruction to execute a command (what commande should be execute here !??)
+we will execute our application 
+
+-------Dockerfile-------------------------------------------
+
+FROM node:alpine
+
+COPY . /app_dir
+
+CMD node /app_dir/app.js
+
+------------------------------------------------------------
+
+
+we can use WORKDIR to specify our app directory 
+
+so when we use WORKDIR instruction all the following instructions assume that we are currently inside the app directory 
+
+
+-------Dockerfile-------------------------------------------
+
+FROM node:alpine
+
+COPY . /app_dir
+
+WORKDIR  /app_dir
+
+CMD node  app.js
+
+------------------------------------------------------------
+
+
+--> to tell docker to package our application so we write in the terminal -->  docker build -t app .
+
+so now you might be expecting an image file inside the current directory (you will not find that image in your app directory because the image is not stored there, in fact an image is not a single file --> for how docker store this image is very complicated and we dont have to worry about it )
+
+--> to say all the images on that computer we type    ---> docker images.   | or docker image ls 
+
+This image contains alpine linux node and our application form 
+
+so now we can run this image on any computer running docker 
+
+--> so to run your application by using docker we type --> run app (app is the name of your image )
+
+
+--> I can go ahead and publish this image to docker hub so anyone can use this image
+
+
+<img width="948" alt="Screen Shot 2023-02-08 at 11 43 57 AM" src="https://user-images.githubusercontent.com/87101785/217507734-9f10e027-6712-4889-a88a-164feaeeb5e8.png">
+
+
+now we  can take this image and run it on any computers 
+
+Lets do some tests 
+
+1: search for play with docker -->
+
+<img width="1123" alt="Screen Shot 2023-02-08 at 11 46 03 AM" src="https://user-images.githubusercontent.com/87101785/217508287-d045be6c-e4fa-4d6d-bac0-10f2a75bca6c.png">
+
+2: start a virtual machine :
+
+
+This virtual machine has an operating system which is linux
+
+
+<img width="1238" alt="Screen Shot 2023-02-08 at 11 47 08 AM" src="https://user-images.githubusercontent.com/87101785/217508478-0ad2033a-1faf-45f1-8560-ac99c6d1e5e7.png">
+
+
+if you tape node (you will see that node command not found ) so node is note installed here
+
+<img width="721" alt="Screen Shot 2023-02-08 at 11 49 16 AM" src="https://user-images.githubusercontent.com/87101785/217508873-e98990de-3aeb-48a5-bc2e-a4a8587454ea.png">
+
+but because we have docker in that machine so we can pull and run the image that i published on docker hub 
+
+
+<img width="710" alt="Screen Shot 2023-02-08 at 11 50 55 AM" src="https://user-images.githubusercontent.com/87101785/217509223-9b58095e-df78-4cc4-8dd9-00af1603abf2.png">
+
+--> to pull the project from docker hub tape --> docker pull codewithmosh/hello-docker (this is the image that create for that project project )
+
+
+<img width="710" alt="Screen Shot 2023-02-08 at 11 53 58 AM" src="https://user-images.githubusercontent.com/87101785/217509891-da4eca0b-ee2c-4f46-af74-8e6931879b76.png">
+
+
+Alright docker download this imag, we can verify by tapping --> docker image ls 
+
+<img width="710" alt="Screen Shot 2023-02-08 at 11 55 18 AM" src="https://user-images.githubusercontent.com/87101785/217510214-dfcd34df-e1b0-4bec-9ded-689c1dc956e1.png">
+
+
+the image add with success 
+
+so now we can run this application exactly the same way we run it in my machine --> docker run codewithmosh/hello-docker
+
+
+<img width="710" alt="Screen Shot 2023-02-08 at 11 57 38 AM" src="https://user-images.githubusercontent.com/87101785/217510764-a0933d96-b7f2-4c03-af14-8c75b1c8387e.png">
+
+
+
 
 
 Some ressources:
