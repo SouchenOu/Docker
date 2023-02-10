@@ -356,7 +356,17 @@ so to start a container with interact with it we have to tape --> docker run -it
 
 <img width="625" alt="Screen Shot 2023-02-10 at 10 01 11 AM" src="https://user-images.githubusercontent.com/87101785/218048759-ab4ef588-bec1-4bb2-8bc2-8c75759c15e7.png">
 
-good now what we have here is called a shell --> a shell is a program that takes our commands and passes them to the operating system for execution
+Good now what we have here is called a shell --> a shell is a program that takes our commands and passes them to the operating system for execution
+
+
+
+Docker compose:
+---------------
+
+
+
+
+
 
 
 Some ressources:
@@ -382,7 +392,6 @@ https://www.youtube.com/watch?v=pTFZFxd4hOI
 
 
 Full-course docker compose
-
 
 https://www.youtube.com/watch?v=HG6yIjZapSA
 
