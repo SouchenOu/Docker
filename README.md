@@ -362,12 +362,61 @@ Good now what we have here is called a shell --> a shell is a program that takes
 
 Docker compose:
 ---------------
+We will talk about docker compose to 
+
+Running Multi-container applications :
+
+1: installing docker compose :
+
+
+<img width="625" alt="Screen Shot 2023-02-10 at 10 16 59 AM" src="https://user-images.githubusercontent.com/87101785/218052289-a64d359c-62d9-4eaf-a54b-5210478d87ee.png">
+
+
+As we see here in Mac we alrighdy have a docker-compose, but if you are using Linux there is spesific instructions to follow to install docker-compose.
+
+
+2: What is docker compose:
+
+Docker compose is a tool for defining and running multi-container Docker applications by using YAML language  (YAML is Yet Another Markup Language)
+
+What is the different between Docker and Docker compose ?
+
+-> Docker , deal with just one container .
+
+->Docker compose didnt deal with just one container (2 or 3 or maybe 10 .. as you like)
+
+
+3: Docker Compose | Build WordPress with MySQL
 
 
 
 
 
 
+
+
+
+
+
+
+
+Commands:
+-------
+
+
+
+--> to see the images           -->  docker images.   or   docker image ls
+
+---> to see  running containers -->  docker ps
+
+--> To remove images            -->  docker image rm (ids)
+
+--> Get all image ids           -->  docker image ls -q
+
+
+--> To remove all containers   --> docker container rm -f $(docker container ls -a -q)
+
+--> To remove all images.      --> docker image rm -f $(docker image ls -q )
 
 Some ressources:
 ------------------
