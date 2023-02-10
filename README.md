@@ -366,7 +366,7 @@ We will talk about docker compose to
 
 Running Multi-container applications :
 
-1: installing docker compose :
+🌱1: installing docker compose :
 
 
 <img width="625" alt="Screen Shot 2023-02-10 at 10 16 59 AM" src="https://user-images.githubusercontent.com/87101785/218052289-a64d359c-62d9-4eaf-a54b-5210478d87ee.png">
@@ -375,7 +375,7 @@ Running Multi-container applications :
 As we see here in Mac we alrighdy have a docker-compose, but if you are using Linux there is spesific instructions to follow to install docker-compose.
 
 
-2: What is docker compose:
+🌱2: What is docker compose:
 
 Docker compose is a tool for defining and running multi-container Docker applications by using YAML language  (YAML is Yet Another Markup Language)
 
@@ -386,22 +386,69 @@ What is the different between Docker and Docker compose ?
 ->Docker compose didnt deal with just one container (2 or 3 or maybe 10 .. as you like)
 
 
-3: Docker Compose | Build WordPress with MySQL
+🌱3: Docker Compose | Build WordPress with MySQL :
+
+Firstly we create docker-compose.yml file
+
+
+<img width="981" alt="Screen Shot 2023-02-10 at 10 58 43 AM" src="https://user-images.githubusercontent.com/87101785/218061925-ac496b95-1b8f-4f25-80e1-927735d7777b.png">
+
+
+
+we should write the version of the compose docker file 
+
+<img width="466" alt="Screen Shot 2023-02-10 at 11 00 22 AM" src="https://user-images.githubusercontent.com/87101785/218062364-bd3e3e71-4505-4cf0-9ea2-1018f95d204b.png">
+
+
+   💬 First container description : --> mysql
+
+Then we write services--> that means containers 
+
+first we give a name to our container --> (I choose to name it --> mysql_database)
+
+then put the name of the image here i want (mysql) image
+
+then i add option (restart : always) I told  the Docker if this container close for some reason so do restart )
+
+then enviroment (MYSQL_ROOT_PASSWORD : (write a password) |  MYSQL_DATABASE: wp_db | MYSQL_USER : wp_user | MYSQL_PASSWORD : (write a password))
+
+then volumes: - mysql:/var/lib/mysql (- means that it can take multiple items)
+
+
+<img width="505" alt="Screen Shot 2023-02-10 at 11 29 37 AM" src="https://user-images.githubusercontent.com/87101785/218069228-fa856070-4dc1-418e-b327-61b97ac475bf.png">
+
+     
+     💬 second container description ---> wordpress. (pss, we can find docker compose of some images  in docker hub)
+     
+for example wordress :
+
+<img width="795" alt="Screen Shot 2023-02-10 at 11 36 19 AM" src="https://user-images.githubusercontent.com/87101785/218071021-8c9cd3f0-8a15-47c0-a6fe-6511c3cc0cb7.png">
+
+     
+     
+We write the name of our container (wordpress)
+
+depends_on: mysql_database option( I told the docker run second container  just if you are sure that the first container is alrighdy run (i write the name of first container))
+
+image name 
+
+restart: always
+
+ports
+
+Environment
+
+volumes
+
+<img width="795" alt="Screen Shot 2023-02-10 at 11 42 01 AM" src="https://user-images.githubusercontent.com/87101785/218072197-1ab9d98a-00ed-480b-8add-9ca70e9d35a4.png">
 
 
 
 
 
 
-
-
-
-
-
-
-
-Commands:
--------
+Docker Commands:
+---------------
 
 
 
@@ -444,3 +491,5 @@ Full-course docker compose
 
 https://www.youtube.com/watch?v=HG6yIjZapSA
 
+
+https://www.youtube.com/watch?v=YPnXtcR4AqQ&list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ&index=24
