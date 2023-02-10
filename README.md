@@ -327,7 +327,36 @@ so now we can run this application exactly the same way we run it in my machine 
 <img width="710" alt="Screen Shot 2023-02-08 at 11 57 38 AM" src="https://user-images.githubusercontent.com/87101785/217510764-a0933d96-b7f2-4c03-af14-8c75b1c8387e.png">
 
 
+Linux_command (Linux distrubution)
+------------------------------------------
+Why linux?
 
+Docker is build on basic Linux concepts .
+
+How we can run debian for this machine
+
+we go to docker hun and search fo debian 
+
+In the terminal insteas of runnning docker debian i am going to run docker run ubuntu, now if you have this image locally docker is going to start a container with this image otherwise, is going to pul this image behind the scene and then start a container 
+
+--> commande :   docker run debian 
+
+what will happen after that ?
+
+Docker started a container but because we didnt intract with this container the container stopped 
+
+If you tape --> docker ps -a we can see the stopped containers
+
+
+<img width="711" alt="Screen Shot 2023-02-10 at 9 57 18 AM" src="https://user-images.githubusercontent.com/87101785/218047916-8589d44b-a42e-4556-92d8-de56a254f62c.png">
+
+
+so to start a container with interact with it we have to tape --> docker run -it. (so we going to start a container in the interactive mode, and in this container we going to load the debian image which we have locally )
+
+
+<img width="625" alt="Screen Shot 2023-02-10 at 10 01 11 AM" src="https://user-images.githubusercontent.com/87101785/218048759-ab4ef588-bec1-4bb2-8bc2-8c75759c15e7.png">
+
+good now what we have here is called a shell --> a shell is a program that takes our commands and passes them to the operating system for execution
 
 
 Some ressources:
