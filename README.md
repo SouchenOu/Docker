@@ -507,6 +507,8 @@ Full-course Docker:
 
 https://www.youtube.com/watch?v=pTFZFxd4hOI
 
+https://www.youtube.com/watch?v=3c-iBn73dDE
+
 
 Full-course docker compose
 
