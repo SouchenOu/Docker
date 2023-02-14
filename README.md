@@ -358,6 +358,10 @@ so to start a container with interact with it we have to tape --> docker run -it
 
 Good now what we have here is called a shell --> a shell is a program that takes our commands and passes them to the operating system for execution
 
+Docker file:
+------------
+
+Docker can build images automatically by reading the instructions from a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. This page describes the commands you can use in a Dockerfile.
 
 
 Docker compose:
