@@ -484,7 +484,7 @@ Docker Commands:
 
 --> to see the images           -->  docker images.   or   docker image ls
 
---> to build image. --> docker build -t (name of your choise to your image)  .
+--> to build image. --> docker build -t (name of your choise to your image)  . (. here means our dockerfile it is in the the current dir)
 
 --> to run a container --> docker container run (give the id of the image  you build)
 
