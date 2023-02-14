@@ -557,8 +557,14 @@ https://www.youtube.com/watch?v=HG6yIjZapSA
 https://www.youtube.com/watch?v=YPnXtcR4AqQ&list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ&index=24
 
 
-
-
 dockerfile:
 
 https://www.youtube.com/watch?v=WmcdMiyqfZs
+
+dockerEngine:
+
+https://www.youtube.com/watch?v=eKj13PsoMNE
+
+Docker networking
+
+https://www.youtube.com/watch?v=bKFMS5C4CG0
