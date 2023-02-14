@@ -486,7 +486,7 @@ Docker Commands:
 
 --> to build image. --> docker build -t (name of your choise to your image)  . (. here means our dockerfile it is in the the current dir)
 
---> to run a container --> docker container run (give the id of the image  you build)
+--> to run a container --> docker container run (give the id or the name  of the image  you build)
 
 ---> to see  running containers -->  docker ps
 
