@@ -227,7 +227,7 @@ How to write a Docker file :
 
 we write instructions for packaging our application 
 
----> we start from a baseImage this baseImage has a bunch of files we are going to take this files and add additional files to it (for example node image) --> how do i know these names ?  ---> This images are officially published on docker hub
+---> we start from a baseImage this baseImage has a bunch of files we are going to take this files and add additional files to it (for example node image ,debian, alpine ) --> how do i know these names ?  ---> This images are officially published on docker hub
 
 
 <img width="1227" alt="Screen Shot 2023-02-08 at 10 51 29 AM" src="https://user-images.githubusercontent.com/87101785/217495487-c6d0b03b-5367-4f73-89a3-e592c7179991.png">
@@ -236,6 +236,15 @@ if you go to hub.docker.com you can see the official node image do docker hub is
 
 if you see at docker hub you will see that there are multiple node images, these node images are built on top of different distributions of linux, so linux has different distributions or different flavors used for different purposes-->  now here we can specify a tag using ":" to specify which linux distribution we want to use  here i will use alpine which is a very small linux distribution, so the size of the image that we are going to downdoad and build on top of is going to be very small 
 
+
+
+The first line in every docker files is { From : (image name) } --> whatever image you are building you want to base it on other image, in our case we have a javascript application so we are gonna need node image to run our application, so we are gonna need node inside of our container so that you can run your node application instead of basing it on a linux alpine or some other lower image  
+
+
+<img width="1108" alt="Screen Shot 2023-02-14 at 3 12 32 PM" src="https://user-images.githubusercontent.com/87101785/218763197-e2c4ed3c-4534-4667-a97a-ff0790194ce5.png">
+
+
+we can anso use RUN for exampla (RUN mkdir -p /home/app ), so using run basically you can execute any kind  of linux command, so you see make directory is a linux commande that creacts /home/app directory, this directory is gonna live inside of the container, so when i start a container from this image this  (/home/app) directory will be created inside of the container and not on my laptop or on the host 
 
 
 --------Dockerfile---------------------------------------------
@@ -546,3 +555,10 @@ https://www.youtube.com/watch?v=HG6yIjZapSA
 
 
 https://www.youtube.com/watch?v=YPnXtcR4AqQ&list=PLX1bW_GeBRhDkTf_jbdvBbkHs2LCWVeXZ&index=24
+
+
+
+
+dockerfile:
+
+https://www.youtube.com/watch?v=WmcdMiyqfZs
