@@ -110,6 +110,32 @@ with virtual machine we can run applications in isolation so inside a physical m
 containers also give us the same kind of isolation so we can run multiple applications in isolation but they are more lightweight they dont need a full operating system in fact all containers on a single machine share the operating system of the host that means we need to license patch and monitor a single operating system, also because the operating system has already started on the host a container can start up pretty quickly and also this container dont need a slice of the hardware resources on the host so we dont need to give  a specific number of CPU cores or a slice of memory or disk space so on a single host we can run tens or even hundreds of containers side by side .
 
 
+
+
+
+
+
+
+
+--> A way to package application with all the necessary dependencies and configuration, so our application will be portable, easly shared and moved arroud.
+
+Where do containers lives:
+--------------------------
+
+
+Must be some kind of storage for this containers, so that you can share them and move them arround!
+
+
+- container live in a container repositories
+
+- many companies have there own private repositories where they host or where they store all the containers, to share it between teams..
+
+- there is a public repository for docker (docker hub)
+
+- In docker hub you can find any application container that you want
+
+
+
 What is virtualisation :
 ------------------------
 
