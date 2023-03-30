@@ -568,3 +568,15 @@ https://www.youtube.com/watch?v=eKj13PsoMNE
 Docker networking
 
 https://www.youtube.com/watch?v=bKFMS5C4CG0
+
+
+
+
+
+
+
+
+
+full devops course
+
+https://www.youtube.com/watch?v=fqMOX6JJhGo
