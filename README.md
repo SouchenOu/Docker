@@ -593,4 +593,8 @@ https://www.youtube.com/watch?v=p28piYY_wv8&list=RDCMUC2KfmYEM4KCuA1ZurravgYw&st
 
 https://docs.docker.com/get-started/
 
+--> Difference between a dockerfile, docker image and docker container
+
+https://www.youtube.com/watch?v=r3wOGnmLxpw
+
 
