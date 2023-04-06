@@ -577,6 +577,20 @@ https://www.youtube.com/watch?v=bKFMS5C4CG0
 
 
 
-full devops course
+---->full devops course
 
 https://www.youtube.com/watch?v=fqMOX6JJhGo
+
+---->A full Devops course on how to run applications in containers
+
+https://www.youtube.com/watch?v=fqMOX6JJhGo
+
+-->Docker full course
+
+https://www.youtube.com/watch?v=p28piYY_wv8&list=RDCMUC2KfmYEM4KCuA1ZurravgYw&start_radio=1&rv=p28piYY_wv8&t=0
+
+-->Docker documentation
+
+https://docs.docker.com/get-started/
+
+
